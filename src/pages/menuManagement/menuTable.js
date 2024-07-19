@@ -496,7 +496,7 @@ const MenuTable = () => {
           <TextField
               margin="dense"
               name="prompt"
-              label="주미에서 메뉴을 설명해주세요."
+              label="키우미에서 메뉴을 설명해주세요."
               type="text"
               multiline
               rows={6}

@@ -159,7 +159,7 @@ export default function UseCaseCard(props) {
                 </div>
             </Paper>
             <Dialog open={useCaseModalOpen} onClose={handleUseCaseModalClose} aria-labelledby="form-dialog-title">
-                <DialogTitle id="form-dialog-title">주미 학습</DialogTitle>
+                <DialogTitle id="form-dialog-title">키우미 학습</DialogTitle>
                 <DialogContent className={classes.dialogContent}>
                     <Typography variant="h6" className={classes.questionTitle}>
                         {props.question}

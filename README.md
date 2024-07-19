@@ -1,4 +1,4 @@
-# Jumi Admin Page - 주미 관리자 페이지
+# Kiumee Admin Page - 키우미 관리자 페이지
 
 
 ### 실행 방법
@@ -31,7 +31,7 @@ Node & Npm 설치: https://joyfulhome.tistory.com/180
 
 <img width="100%" alt="스크린샷 2024-03-30 오후 1 47 43" src="https://github.com/kookmin-sw/capstone-2024-24/assets/93641814/053b42b9-4ebb-49fa-90c6-9aef80e1bd23">
 
-##### 5.4 주미 학습하기
+##### 5.4 키우미 학습하기
 
 <img width="100%" alt="스크린샷 2024-03-30 오후 1 42 59" src="https://github.com/kookmin-sw/capstone-2024-24/assets/93641814/a0cd088c-8d5d-4cbf-8fa5-0b3c4806cedd">
 

@@ -38,7 +38,7 @@ export default function UseCaseManagement(props) {
     }, [businessItemsInfo, businessItemsInfoIsLoading, businessItemsInfoIsError]); // 의존성 배열에 businessInfo, isLoading, isError를 추가
     return (
         <>
-            <PageTitle title="주미 학습하기"/>
+            <PageTitle title="키우미 학습하기"/>
             <Grid container spacing={4}>
                 <Grid item xs={12}>
                     <Widget disableWidgetMenu>

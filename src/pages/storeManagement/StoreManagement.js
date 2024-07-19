@@ -225,7 +225,7 @@ export default function StoreManagement() {
                     />
                     <TextField
                         margin="dense"
-                        label="주미에서 매장을 설명해주세요."
+                        label="키우미에서 매장을 설명해주세요."
                         type="text"
                         multiline
                         rows={6}

@@ -48,7 +48,7 @@ const structure = [
   // },
   { id: 15, label: '매장관리', link: '/app/storeManagement', icon: <StoreIcon /> },
   { id: 16, label: '메뉴관리', link: '/app/menuManagement', icon: <RestaurantMenuIcon /> },
-  { id: 17, label: '주미학습', link: '/app/useCaseManagement', icon: <Create /> },
+  { id: 17, label: '키우미학습', link: '/app/useCaseManagement', icon: <Create /> },
   // {
   //   id: 4,
   //   label: "UI Elements",

@@ -311,7 +311,7 @@ const OrderList = () => {
                                         <div className={`${classes.dFlex}`}>
                                             <AccountCircleIcon fontSize="large" className={classes.iconColor}/>
                                             <div className={classes.content}>
-                                                <div className={classes.text_padding}>주미</div>
+                                                <div className={classes.text_padding}>키우미</div>
                                                 <ListItem key={index}
                                                           className={`${classes.bubble} ${classes.leftBubble}`}>
                                                     <ListItemText primary={chat.text}/>
