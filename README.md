@@ -16,7 +16,8 @@ Node & Npm 설치: https://joyfulhome.tistory.com/180
 > npm start
 ```
 ### 4. 서버 접속
-메인화면: http://localhost:3000/
+로컬: http://localhost:3000/ <br>
+실제링크: https://kiumee-admin.vercel.app/
 
 ### 5. 페이지
 #### 5.1 통계자료 확인
