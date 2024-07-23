@@ -143,9 +143,7 @@ export default function Header(props) {
             />
           )}
         </IconButton>
-        {/*<img src="/logo.webp" alt="image" style={{ height: "30px" }} />*/}
         <Typography variant="h6" weight="medium" className={classes.logotype} style={{ color: '#ffffff' }}>
-          {/*미도인*/}
           {businessInfo?.data?.name}
         </Typography>
         <div className={classes.grow} />
@@ -243,9 +241,8 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              {/*미도인 관리자*/}
-              {userInfo?.name}
               {/*계정이름 넣어야됩니다.*/}
+              {userInfo?.name}
             </Typography>
             <Typography
                 className={classes.profileMenuLink}
