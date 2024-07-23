@@ -22,13 +22,15 @@ Node & Npm 설치: https://joyfulhome.tistory.com/180
 ### 5. 페이지
 #### 5.1 통계자료 확인
 
-![통계페이지](https://github.com/user-attachments/assets/2f80ee49-f990-412c-9d1c-93ca0c7bb221)
+![매장통계자료제공](https://github.com/user-attachments/assets/ad862bc2-23b6-408c-b349-415e0e8ec82a)
+
+![대화리스트](https://github.com/user-attachments/assets/b73cf459-522b-4aae-b925-1e8204af30e1)
 
 #### 5.2 매장 관리하기
 
-![매장관리하기](https://github.com/user-attachments/assets/53688937-0d27-4d90-bae8-14d74c8a4dff)
+![매장관리하기1](https://github.com/user-attachments/assets/afed85c2-0a58-4a46-b199-f7cc870b1a28)
 
-![매장관리하기_디테일](https://github.com/user-attachments/assets/327cdd85-06d9-464d-b9f7-8be7faf2854d)
+![매장관리하기2](https://github.com/user-attachments/assets/031a5a28-0de6-49c1-8769-2eb2666cc473)
 
 #### 5.3 메뉴 관리하기
 
@@ -40,7 +42,7 @@ Node & Npm 설치: https://joyfulhome.tistory.com/180
 
 #### 5.4 키우미 학습하기
 
-![AI프롬프트1](https://github.com/user-attachments/assets/52d4dff7-5dc0-4a3d-a4de-c0fee5bffb00)
+![AI프롬프트1](https://github.com/user-attachments/assets/d1efa320-6f7f-430d-8e56-61bf11778458)
 
-![AI프롬프트2](https://github.com/user-attachments/assets/b86ff5a5-3ac0-411d-ac04-2895543f121f)
+![AI프롬프트2](https://github.com/user-attachments/assets/431f073f-6c36-4e5b-9414-19f8cba0fa14)
 
