@@ -1,9 +1,12 @@
 import { useMutation } from 'react-query';
 import axios from 'axios';
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
 
 const singUpUser = async (userData) => {
-    const response = await axios.post('https://jumi-api.youchu.io/v1/signup', userData);
+
+    const response = await axios.post(`${apiUrl}/v1/signup`, userData);
     return response.data;
 };
 
@@ -16,7 +19,8 @@ export function useSignupMutation(onSuccess, onError){
 
 
 const loginUser = async (userData) => {
-    const response = await axios.post('https://jumi-api.youchu.io/v1/login', userData);
+    console.log(apiUrl)
+    const response = await axios.post(`${apiUrl}/v1/login`, userData);
     return response.data;
 };
 
@@ -30,7 +34,7 @@ export function useLoginMutation(onSuccess, onError){
 const uploadImage = async (formData) => {
     const token = localStorage.getItem('id_token');
     const response = await axios.post(
-        'https://jumi-api.youchu.io/v1/image-upload',
+        `${apiUrl}/v1/image-upload`,
         formData,
         {
             headers: {
@@ -56,7 +60,7 @@ const businessCreate = async (businessData) => {
         'Authorization': `Bearer ${token}`,
         'accept': 'application/json',
     };
-    const response = await axios.post('https://jumi-api.youchu.io/v1/business', businessData, { headers });
+    const response = await axios.post(`${apiUrl}/v1/business`, businessData, { headers });
     return response.data;
 };
 
@@ -72,7 +76,7 @@ export const fetchBusinessList = async () => {
     const headers = {
         'Authorization' : `Bearer ${token}`
     };
-    const response = await axios.get(`https://jumi-api.youchu.io/v1/business`, { headers });
+    const response = await axios.get(`${apiUrl}/v1/business`, { headers });
     return response.data;
 }
 
@@ -81,7 +85,7 @@ export const fetchUserInfo = async () => {
     const headers = {
         'Authorization': `Bearer ${token}`,
     };
-    const response = await axios.get('https://jumi-api.youchu.io/v1/me', { headers });
+    const response = await axios.get(`${apiUrl}/v1/me`, { headers });
     return response.data;
 };
 
@@ -97,7 +101,7 @@ export const fetchBusinessInfo = async () => {
         console.log('Token 또는 company_id가 없습니다.');
         return null; // 또는 적절한 에러 처리
     }
-    const response = await axios.get(`https://jumi-api.youchu.io/v1/business/${company_id}`, { headers });
+    const response = await axios.get(`${apiUrl}/v1/business/${company_id}`, { headers });
     return response.data;
 }
 
@@ -107,7 +111,7 @@ export const fetchBusinessItemsInfo = async () => {
     const headers = {
         'Authorization' : `Bearer ${token}`
     };
-    const response = await axios.get(`https://jumi-api.youchu.io/v1/business/${company_id}/items`, { headers });
+    const response = await axios.get(`${apiUrl}/v1/business/${company_id}/items`, { headers });
     return response.data;
 }
 
@@ -119,7 +123,7 @@ const businessUpdate = async (businessData) => {
         'Authorization': `Bearer ${token}`,
         'accept': 'application/json',
     };
-    const response = await axios.put(`https://jumi-api.youchu.io/v1/business/${company_id}`, businessData, { headers });
+    const response = await axios.put(`${apiUrl}/v1/business/${company_id}`, businessData, { headers });
     return response.data;
 };
 
@@ -138,7 +142,7 @@ const businessItemsUpdate = async (businessItemsData) => {
         'Authorization': `Bearer ${token}`,
         'accept': 'application/json',
     };
-    const response = await axios.post(`https://jumi-api.youchu.io/v1/business/${company_id}/items`, businessItemsData, { headers });
+    const response = await axios.post(`${apiUrl}/v1/business/${company_id}/items`, businessItemsData, { headers });
     return response.data;
 };
 
@@ -152,7 +156,7 @@ export function useBusinessItemsUpdateMutation(onSuccess, onError){
 
 // gpt 사용해보기
 const GPTChat = async (prompt) => {
-    const response = await axios.post('https://jumi-gpt.youchu.io/prompt', prompt);
+    const response = await axios.post(`${apiUrl}/prompt`, prompt);
     return response.data;
 };
 
@@ -170,7 +174,7 @@ export const fetchBusinessPromptInfo = async () => {
     const headers = {
         'Authorization' : `Bearer ${token}`
     };
-    const response = await axios.get(`https://jumi-api.youchu.io/v1/business/${company_id}/prompt`, { headers });
+    const response = await axios.get(`${apiUrl}/v1/business/${company_id}/prompt`, { headers });
     return response.data;
 }
 
@@ -181,7 +185,7 @@ const promptCreate = async (promptData) => {
     const headers = {
         'Authorization': `Bearer ${token}`
     };
-    const response = await axios.post(`https://jumi-api.youchu.io/v1/business/${company_id}/prompt`, promptData, { headers });
+    const response = await axios.post(`${apiUrl}/v1/business/${company_id}/prompt`, promptData, { headers });
     return response.data;
 };
 
@@ -198,7 +202,7 @@ const promptUpdate = async (props) => {
     const headers = {
         'Authorization': `Bearer ${token}`
     };
-    const response = await axios.put(`https://jumi-api.youchu.io/v1/business/${company_id}/prompt/${props.id}`, {question : props.question, answer: props.answer, items:props.items}, { headers });
+    const response = await axios.put(`${apiUrl}/v1/business/${company_id}/prompt/${props.id}`, {question : props.question, answer: props.answer, items:props.items}, { headers });
     return response.data;
 };
 
